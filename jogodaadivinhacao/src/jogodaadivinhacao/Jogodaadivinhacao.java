@@ -29,10 +29,8 @@ public class Jogodaadivinhacao {
         if (resposta == 0) {
             for (int i = 0; a <= 10; i++) {
 
-               String st = JOptionPane.showInputDialog("Digite um número entre 1 e 10");
-            int b = Integer.parseInt(st); 
-
-                
+                String st = JOptionPane.showInputDialog("Digite um número entre 1 e 10");
+                int b = Integer.parseInt(st);
 
                 if (b > a) {
                     JOptionPane.showMessageDialog(null, "O número é menor");
@@ -42,7 +40,7 @@ public class Jogodaadivinhacao {
                     JOptionPane.showMessageDialog(null, "Acertou!!!");
                     c++;
 
-                    int r = JOptionPane.showConfirmDialog(null, "Certo " + str + " deseja jogar novamente o jogo?");
+                    int r = JOptionPane.showConfirmDialog(null, "Certo " + str + ", deseja jogar novamente o jogo?");
 
                     if (r == JOptionPane.YES_OPTION) {
                         JOptionPane.showMessageDialog(null, "Certo, vamos novamente");
